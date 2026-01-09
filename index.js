@@ -267,7 +267,7 @@ app.get("/", guard, async (req, res) => {
         const endQuote = html.indexOf(startQuote, srcIndex + 5);
         imageUrl = html.substring(srcIndex + 5, endQuote).trim();
 
-        const LANDER_NAME = "epoch";
+        const LANDER_NAME = "bestgymlanding";
         if (imageUrl && !/^https?:\/\//i.test(imageUrl)) {
           try {
             const baseUrl = new URL(KEITARO_URL);
